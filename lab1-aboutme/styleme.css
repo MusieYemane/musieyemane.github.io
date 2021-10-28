@@ -19,6 +19,8 @@ h2{
 h5{
   color:blue;
 }
+
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -34,8 +36,6 @@ h5{
 }
 
 a:link { text-decoration: none; }
-
-
 a:hover { text-decoration:underline; }
 
 p::first-letter {
