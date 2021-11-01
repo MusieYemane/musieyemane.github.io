@@ -5,10 +5,11 @@
 	-->
 <script>
 function calcTip() {
-// Enter your code here to make Tip Calculator work
-let subt= document.getElementById("subtotal").value;
-let rate= document.getElementById("tip").value;
-document.getElementById("total").innerHTML="$"+(rate/100)*subt;
+	// Enter your code here to make Tip Calculator work
+	let subt= parseInt(document.getElementById("subtotal").value);
+	let rate= parseInt(document.getElementById("tip").value);
+	let tot= subt + (rate/100)*subt;
+	document.getElementById("total").innerHTML="$"+ tot;
 
 }
 

@@ -20,3 +20,19 @@ const fact= function f(n){
   return (n>0)? n*f(n-1):1;
 };
 console.log(fact(2))
+
+// Javascript objects
+
+const myObj= {
+  fname:"Musie",
+  lname:"Araia",
+  height:1.77
+}
+delete myObj.height;
+
+for(let x in myObj){
+  console.log(myObj[x]);
+}
+
+// setTimeout(sqr, 2000);
+setTimeout(sqr(4), 2000);

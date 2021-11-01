@@ -1,4 +1,42 @@
-<form action="http://www.google.com/search"> 
-  alert("What do you want to do")
-  <div> Let's search Google <input name="q" /> <input type="submit" /> </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    var myfunc = function (a, x) {
+      return a * x;
+    };
+    function notify() {
+      var x = myfunc(2, 3);
+      var y = myfunc;
+      // alert(x);
+     alert(y(2, 3));
+    }
+
+
+
+
+
+
+  </script>
+    <button onclick="notify()">Click me</button>
+
+  <form action="http://www.google.com/search">
+    alert("What do you want to do")
+    <div> Let's search Google <input name="q" /> <input type="submit" /> </div>
+
+
+
+  </form>
+
+</body>
+
+</html>
