@@ -43,45 +43,33 @@ function chengeFont() {
 
 
 
-// function pig() {
-//   var words = document.getElementById("textArea").value;
-//   var splittedword = words.split(/\s+/);
-//   var result = "";
-//   for (var i = 0; i < splittedword.length; i++) {
-//       if (splittedword[i].charAt(0).match("[aeoiuAEOIU]")) {
-//           changed = splittedword[i] + "ay";
-//       } else {
-//           var word = splittedword[i];
-//           for (var j = 0; j < word.length; j++) {
-//               if (word[j].match("[aeoiuAEOIU]")) {
-//                   var changed = word.substring(j) + word.substring(0, j) + "ay";
-//                   break;
-//               }
+function pig() {
+  var words = document.getElementById("textArea").value;
+  var splittedword = words.split(/\s+/);
+  var result = "";
+  for (var i = 0; i < splittedword.length; i++) {
+    var word = splittedword[i];
+    result +=  toPig(word) + " ";
 
-//           }
-//       }
-//       result += changed + " ";
-
-//   }
-//   document.getElementById("textArea").value = result;
-
-// }
+  }
+  document.getElementById("textArea").value = result;
+}
 
 
-function translatePigLatin(str) {
+function toPig(str) {
   let vowels = ['a', 'e', 'i', 'o', 'u'];
   let newStr = "";
 
   if (vowels.indexOf(str[0]) > -1) {
-      newStr = str + "way";
-      break;
+      newStr = str + "ay";
   } else {
       let firstMatch = str.match(/[aeiou]/g) || 0;
       let vowel = str.indexOf(firstMatch[0]);
       newStr = str.substring(vowel) + str.substring(0, vowel) + "ay";
-      break;
+
   }
-  document.getElementById("textArea").value = newStr;
+  return newStr;
+
 
 }
 
