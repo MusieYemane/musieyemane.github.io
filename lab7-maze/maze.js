@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+
   let lost = false;
 
   $("#start").click(function () {
