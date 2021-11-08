@@ -37,7 +37,7 @@ function animate() {
 
 
   function changeText() {
-    
+  
     if (i < (arr.length - 1)) {
       i = i + 1;
     } else if (i === (arr.length - 1)) {
