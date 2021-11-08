@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-"use strict";
+//"use strict";
 $(document).ready(function () {
 
     var count = 0;//count variable for left and right positioning
