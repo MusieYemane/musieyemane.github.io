@@ -32,7 +32,7 @@ $(document).ready(function () {
     });
 
     var images= ["url('images/background.jpg')", "url('images/background2.jpeg')", "url('images/background3.jpg')"];
-    var index=1;
+    var index=0;
     $("#changeImage").click(function(){
       if(index>2){index=0;};
       $(".puzzlepiece").css({"background-image":images[index++]})
