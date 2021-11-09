@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//"use strict";
+"use strict";
 $(document).ready(function () {
 
     var count = 0;//count variable for left and right positioning
@@ -32,7 +32,7 @@ $(document).ready(function () {
     });
 
     var images= ["url('images/background.jpg')", "url('images/background2.jpeg')", "url('images/background3.jpg')"];
-    var index=0;
+    var index=1;
     $("#changeImage").click(function(){
       if(index>2){index=0;};
       $(".puzzlepiece").css({"background-image":images[index++]})
