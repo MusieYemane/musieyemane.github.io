@@ -17,24 +17,40 @@
       background-color: whitesmoke;
       margin:0;
     }
+    #header{
+      background-color: black;
+    }
+    
 
     footer {
       text-align: center;
-      padding:20px;
-      margin:0;
       background-color: lightgray;
-      color: blue;
+      color: gray;
+      position:fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
     }
+    img{
+      width: 140px;
+      height: 140px;
+      border-radius: 30%;
+    }
+    #footImg{
+      height: 40px;
+      width: 60px;
+    }
+    
   </style>
 </head>
 
 <body>
-  <div style="background-color: darkblue;">
-    <img src="images/musie.jpg" alt="My photo" width="200" height="200" style="border-radius: 50%">
+  <div id= "header">
+    <img src="images/musie.jpg" alt="My photo">
   </div>
-  <h1>Musie Yemane Araia</h1>
+ <h1>Musie Yemane Araia</h1> 
 
-  <ul style="padding:2% 0%;">
+  <ul>
     <li><a href= "lab1-aboutme/aboutme.html">Lab01 - About Me</a></li>
     <li><a href= "lab1-recipe/pie.html">Lab01 - Recipe</a></li>
     <li><a href= "lab2-movie/tmnt.html">Lab02 - Movie Review</a></li>
@@ -60,7 +76,7 @@
     </p>
    
     <a href="http://validator.w3.org/nu/?doc=https://musieyemane.github.io/index.html" target="_blank">
-      <img src="https://manalabs.org/img/w3c-html.png" alt="HTML validator icon" /> </a>
+      <img id= 'footImg' src="https://manalabs.org/img/w3c-html.png" alt="HTML validator icon" /></a>
   </footer>
 
 </body>
