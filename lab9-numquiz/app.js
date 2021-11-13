@@ -1,13 +1,15 @@
 const express= require('express');
 const app= express();
-const port= 8000;
+const port= 2020;
 let score=0;
 let index=0;
 const questions= ['1, 1, 2, 3, 5',
                 '1, 4, 9, 16, 25', 
                 '2, 3, 5, 7, 11',
-                '1, 2, 4, 8, 16'];
-const answers= [9, 36, 13, 32];
+                '1, 2, 4, 8, 16',
+                '1, 2, 3, 4, 5',
+              ];
+const answers= [9, 36, 13, 32, 6];
 
 
 // middleware: parse incoming request, without this request.body is undefined
