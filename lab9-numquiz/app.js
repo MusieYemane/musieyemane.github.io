@@ -16,6 +16,7 @@ const answers= [9, 36, 13, 32, 6];
 app.use(express.json());
 app.use(express.urlencoded());
 
+app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 
 app.get('/', function(req, res){
