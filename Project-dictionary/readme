@@ -18,10 +18,12 @@ files:
 6. word.js: Node.js program to lookup the term in the database, collect the meanings,
 and send JSON to Browser
 
+Dependencies:
+go to this directory and install express and mysql by:
+npm install express
+npm install mysql
 
 In order to work, remember to start the server first by running: node Dictionary.js
 Then go the dict.html and search words. 
-You also need to install mysql to the project: npm install mysql
-
 
 You may also open this project in browser via: http://127.0.0.1:5500/Project-dictionary/dict.html
