@@ -4,8 +4,8 @@ $(document).ready(()=>{
   $('#lookup').click(()=>{
     var word= $('#word').val();
     $.ajax({
-      "url": "http://localhost:2021/", 
-      "data": {"word": word},  // user input to be send to the server, ?word=''
+      "url": "http://localhost:2021/?word="+word, 
+      // "data": {"word": word},  // user input to be send to the server, ?word=''
       "type": "GET",
       "success": (data)=>{
         window.updateHtml(data);
