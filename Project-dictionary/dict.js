@@ -10,7 +10,7 @@ $(document).ready(()=>{
       "success": (data)=>{
         window.updateHtml(data);
       }, 
-      "error": ()=> console.log('Erroe ocured from the server')
+      "error": ()=> console.log('Error ocured from the server')
       });
   })
 
