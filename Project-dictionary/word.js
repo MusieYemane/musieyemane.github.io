@@ -1,7 +1,6 @@
 
 exports.queryWord= function(word, res){
   const mysql = require('mysql');
-  const { callbackify } = require('util');
   
   var con = mysql.createConnection({
     host: "127.0.0.1",  // or localhost

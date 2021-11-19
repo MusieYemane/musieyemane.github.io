@@ -368,3 +368,5 @@ a=100;
 y1= myFunc();
 console.log(y1);
 //output 40 130
+
+
